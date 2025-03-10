@@ -11,8 +11,8 @@ import wind_icon from '../assets/wind.png';
 
 const Weather = () => {
   const inputRef = useRef();
-  const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState('New York'); 
+  const [weatherData, setWeatherDatach] = useState(null);
+  const [city, setCity] = useState('New York'); all
 
   const allIcons = {
     '01d': clear_icon,
