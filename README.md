@@ -12,4 +12,4 @@ React.js – Frontend framework
 JavaScript (ES6+) – Core logic
 OpenWeatherMap API – Weather data source
 Vite – Fast build tool for React
-CSS – Styling (optional)
+CSS – Styling 

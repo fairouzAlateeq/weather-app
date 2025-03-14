@@ -11,8 +11,8 @@ import wind_icon from '../assets/wind.png';
 
 const Weather = () => {
   const inputRef = useRef();
-  const [weatherData, setWeatherDatach] = useState(null);
-  const [city, setCity] = useState('New York'); all
+  const [weatherData, setWeatherData] = useState(null);
+  const [city, setCity] = useState('New York'); 
 
   const allIcons = {
     '01d': clear_icon,
@@ -76,21 +76,21 @@ const Weather = () => {
 
       {weatherData ? (
         <>
-          <img src={weatherData.icon} alt='' className='weather-icon' />
-          <p className='temperature'>{weatherData.temperature}°C</p>
-          <p className='location'>{weatherData.location}</p>
+          <img src={weatherData?.icon} alt='' className='weather-icon' />
+          <p className='temperature'>{weatherData?.temperature}°C</p>
+          <p className='location'>{weatherData?.location}</p>
           <div className='weather-data'>
             <div className='col'>
               <img src={humidity_icon} alt='' />
               <div>
-                <p>{weatherData.humidity}%</p>
+                <p>{weatherData?.humidity}%</p>
                 <span>Humidity</span>
               </div>
             </div>
             <div className='col'>
               <img src={wind_icon} alt='' />
               <div>
-                <p>{weatherData.windSpeed} Km/h</p>
+                <p>{weatherData?.windSpeed} Km/h</p>
                 <span>Wind Speed</span>
               </div>
             </div>
